@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+{% load crispy_forms_tags %}
+
+{% block title %} Contacto {% endblock %}
+
+{% block content %}
+
+<div class="contact_introduction">
+	<div class="wrapper">
+		<div class="row-fluid">
+			<div class="span12 video_coment">
+				<h6>PONTE EN CONTACTO CONMIGO PARA CUALQUIER CONSULTA O PETICION, SI QUEREIS PODEIS ENVIARME VUESTRAS PROPIAS RECETAS! </h6>
+				<p>
+					No olvides que puedes pedirme cualquier tipo de repuesto para tu Thermomix y en unos dias te lo enviare a tu domicilio!
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="contact_form">
+	<div class="wrapper">
+		<div class="row-fluid">
+			<div class="span4">
+				<h6>PONTE EN CONTACTO CONMIGO PARA CUALQUIER CONSULTA O PETICION, SI QUEREIS PODEIS ENVIARME VUESTRAS PROPIAS RECETAS! </h6>
+				<p>
+					No olvides que puedes pedirme cualquier tipo de repuesto para tu Thermomix y en unos dias te lo enviare a tu domicilio!
+				</p>
+			</div>
+			<div class="span8 form">
+				{% crispy form %}
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+
+{% endblock %}

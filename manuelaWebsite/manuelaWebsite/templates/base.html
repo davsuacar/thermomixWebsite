@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+		<title>{% block title %}{% endblock %}</title>
+		<meta name="description" content="">
+		<meta name="author" content="DAVID">
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link href="{{ STATIC_URL }}css/base.css" type="text/css" rel="stylesheet" />
+		<link href="{{ STATIC_URL }}css/bootstrap.css" type="text/css" rel="stylesheet" />
+		<link href="{{ STATIC_URL }}css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+		<link href="{{ STATIC_URL }}css/skins/boxed.css" type="text/css" rel="stylesheet" />
+		<link href="{{ STATIC_URL }}css/styles.css" type="text/css" rel="stylesheet" />
+
+		<script src="{{ STATIC_URL }}js/jquery-1.10.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ STATIC_URL }}js/jquery-ui-1.10.3.custom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ STATIC_URL }}js/jquery-ui-1.10.3.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ STATIC_URL }}js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="{{ STATIC_URL }}js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+	<body>
+		<div class="wrap-switcher">
+			<header>
+				<div class="wrapper">
+					<div class="logo">
+						<img alt="" height="120" width="75" src="{{STATIC_URL}}img/logo.png">
+						<img alt="" height="600" width="350" src="{{STATIC_URL}}img/Letras.png">
+					</div>
+					<div class="navi">
+						<ul>
+							<li class="active">
+								<a href="/">Inicio</a>
+							</li>
+							<li>
+								<a href="{% url 'recipes' %}">Recetas</a>
+							</li>
+							<li>
+								<a href="{% url 'offers' %}">Ofertas</a>
+							</li>
+							
+							<li>
+								<a href="{% url 'shop' %}">Tienda</a>
+							</li>
+							<li>
+								<a href="{% url 'contact' %}">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<div class="clear"></div>
+			{% block sidebar %}{% endblock %}
+
+			{% block content %}{% endblock %}
+			<div class="footer">
+				<div class="wrapper">
+					<div class="copy">
+						<p>
+							<strong>BeCreative Software: GmbH</strong>
+							© 2013
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

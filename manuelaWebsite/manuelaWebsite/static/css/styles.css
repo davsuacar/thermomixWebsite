@@ -1,0 +1,154 @@
+.wrap-switcher {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+    margin: 0px auto;
+    width: 1000px;
+    background-color: red;
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 940px;
+}
+
+.logo {
+	float:left;
+	background: url(image-url.gif) no-repeat scroll 0 0;	
+}
+
+.navi {
+	float:right;
+	
+}
+
+.navi li {
+	float:left;
+	width:80px;
+}
+
+header {
+	background-color:rgba(198, 242, 38, 0.95); 
+	box-shadow: 0 1px 1px;
+	display:block;
+	height:80px;
+	position: relative;
+	z-index: 5;
+}
+
+.clear {
+    clear: both;
+}
+
+.span4.video_coment{
+	border-right: 1px solid #878787;
+	padding: 20px 20px 0 20px;
+	width: 49.915%;
+	box-shadow:  0 0 6px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.span8.video_tag{
+	width: 40.957%;
+}
+
+.video_coment h6{
+	font-weight:50;
+	font-style: normal;
+	font:"Courier New";
+	line-height:100%;
+	margin-bottom: 0.5em;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+	color: #0D0D0E;
+	font-size: 40px;
+}
+
+.video_coment p{
+	font-weight:20;
+	font-style: normal;
+	font:"Lucida Console";
+	line-height:100%;
+	margin-bottom: 0.5em;
+	text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+	color: #0D0D0E;
+	font-size: 20px;
+}
+
+.order{
+	background-color:rgba(198, 242, 38, 0.95);
+	padding: 60px 0;
+	
+	
+}
+
+.contact_introduction{
+	background-color:#FFFFFF;
+	padding: 60px 0;
+	
+	
+}
+
+.contact_form{
+	background-color:rgba(198, 242, 38, 0.95);
+	padding: 60px 0;
+	
+	
+}
+.span8.form{
+	border-radius: 12px;
+	border:5px solid gray;
+	padding-top:10px;
+	padding-left:0px; 
+	
+}
+.worktogether{
+	background-color:#FFFFFF;
+	padding: 60px 0;
+}
+
+.footer{
+	background-color:#403C3A;
+	padding: 10px 0;
+	
+}
+
+.footer p{
+	color:#FFFFFF;
+}
+
+.recipe_headers{
+	background-color:rgba(198, 242, 38, 0.95);
+	padding: 60px 0;
+	
+	
+}
+
+ol, ul{
+	
+	list-style: none outside none;
+}
+li.active {
+
+background: none repeat scroll 0 0 rgba(152, 178, 64, 0.42);
+
+}
+li.active a {
+	color:#1B1D1E;
+	font-family:"Comic Sans MS";
+	
+}
+
+.navi li a {
+	float:left;
+	padding: 30px 0;
+	text-align: center;
+	width: 80px;
+	
+}
+
+html, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, img, small, strong, ol, ul, li, form, label, table, caption, tr, td, footer, header {
+    border: 0 none;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}

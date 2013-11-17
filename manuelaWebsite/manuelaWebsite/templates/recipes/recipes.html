@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load thumbnail %}
+
+{% block title %} Recetas de Manuela {% endblock %}
+
+{% block content %}
+
+<div class="recipes_header">
+	<div class="wrapper">
+		<div class="row-fluid">
+			<div class="span4">
+				<!-- FORM YOUTUBE -->
+				<h1>THIS IS THE SPACE FOR THE MENU</h1>
+				<p>TYPE 1</p>
+				<p>TYPE 2</p>
+				<p>TYPE 3</p>
+				<p>TYPE 4</p>
+				
+			</div>
+			<div class="span8">
+				<!-- FORM YOUTUBE -->
+				<h1>HERE WILL BE SHOWN ALL THE RECIPES</h1>
+				{% for recipe in recipes %}
+				<div class="item">
+					<h1>recipe.name</h1>
+				  <div class="ingredients">
+				  	{% for ingredient in recipe.ingredients %}
+					<h2>{{ingredient.name}}</h2><h3>{{ingredient.quantity}}</h3>
+				  </div>
+				  <div class="steps">
+					{% for step in recipe.steps|order_by__position %}
+					<h1>{{step.position}}</h1><p>{{step.description}}</p><br>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
